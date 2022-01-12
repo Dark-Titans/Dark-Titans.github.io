@@ -8,6 +8,10 @@
     font-family: 'Vujahday Script', cursive;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Navbar */
 
 .navbar {
@@ -39,7 +43,9 @@
 
 /* Coloring */
 .home {
-    background-color: #092036;
+    background-image: url('../assets/image/macbook.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .blog {
@@ -57,7 +63,9 @@
 .writeup {
     background-image: url(../assets/image/writeup.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
+/* Coloring End */
 
 /* Padding the content height */
 .home-content,
@@ -87,25 +95,10 @@
     color: white;
 }
 
-/* Blog Card color */
-.card-text,
-.card-title {
-    color: black;
-}
-
-/* Blog Card */
-.row {
-    padding: 20px;
-}
-
-.card {
-    height: 20vh;
-}
-
 /* Writeup Content */
 .ctf-topic {
-    color: gold;
-    text-shadow: 4px 4px red;
+    color: white;
+    text-shadow: 2px 2px rgb(63, 12, 158);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -125,11 +118,77 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.logo {
+    width: 300px;
+    height: 300px;
+}
+
+
+/*Card Configuration*/
+
+.row {
+    padding: 20px;
+}
+
+.card {
+    height: 20vh;
+}
+
+.binary {
+    background-image: linear-gradient(#42275a , #734b6d);
+}
+
+.reverse {
+    background-image: linear-gradient(#614385 , #516395);
+}
+
+.crypto {
+    background-image: linear-gradient(#000428 , #004e92);
+}
+
+.forensic {
+    background-image: linear-gradient(#2b5876 , #4e4376);
+}
+
+.android {
+    background-image: linear-gradient(#ffd89b , #19547b);
+}
+
+.web {
+    background-image: linear-gradient(#43cea2 , #185a9d);
+}
+
+.writeup-card-bg {
+    background-image: linear-gradient(#614385,#516395);
+}
+.card-title,
+.card-text {
+    color: white;
+}
+/* Card Configuration End */
+
+
+/* Team Card Configuration */
+
+
+
 /* For mobile */
 @media all and ( max-width : 640px )
 {
     .navbar {
         height: auto;
+    }
+
+    .home {
+        background-image: url('../assets/image/mobile-bg.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .writeup {
+        background-image: url('../assets/image/writeup-bg.png');
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     .home-content {
@@ -150,14 +209,22 @@
     }
 
     .ctf-topic {
-        background-image: url(../assets/image/work.png);
-        color: rgb(16, 0, 138);
+        color: white;
         text-shadow: none;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     #writeup-card {
         height: auto;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact-content h5 {
+        padding-right: 2px;
     }
 }
 
